@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+</head>
+
+<body>
+    <header>
+        <hgroup class="h-group">
+            <h1>
+                Member Details
+            </h1>
+            <div class="dot">
+
+            </div>
+            <h2>
+                Required
+            </h2>
+        </hgroup>
+    </header>
+    <hr class="hr-line">
+    <nav>
+        <ul class="nav-tabs">
+            <li>Basic information management</li>
+            <li class="active-tab">Investment type management</li>
+            <li>View deposit and withdrawal details</li>
+            <li>Sales history inquiry</li>
+            <li>Investment details inquiry</li>
+            <li>Receivable details inquiry</li>
+            <li>SMS management</li>
+            <li>Consultation history management</li>
+            <li>1:1 Inquiry inquiry</li>
+        </ul>
+    </nav>
+    <section class="status-submenu">
+        <hgroup class="hgroup">
+            <h2>
+                Application list
+            </h2>
+            <h4>
+                (Total 100 people | 1 pending approval)
+            </h4>
+        </hgroup>
+        <div>
+            <div class="dropdown-menus">
+                <!-- <label for="approval-status-select">Choose a pet:</label> -->
+                <div>
+                    <select name="Approval status" class="input-select" id="approval-status-select">
+                        <option value="">
+                            Approval status All
+                        </option>
+                        <option value="waiting">waiting for approval</option>
+                        <option value="approved">
+                            Approved
+                        </option>
+                        <option value="denied">
+                            Denial of Approval
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <select name="Approval status" class="input-select" id="approval-status-select">
+                        <option value="">
+                            Order of application date
+                        </option>
+                        <option value="waiting">waiting for approval</option>
+                        <option value="approved">Approved</option>
+                        <option value="denied">Denial of Approval</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="Approval status" class="input-select" id="approval-status-select">
+                        <option value="">
+                            View 50
+                        </option>
+                        <option value="waiting">waiting for approval</option>
+                        <option value="approved">Approved</option>
+                        <option value="denied">Denial of Approval</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr class="hr-line">
+    <main>
+        <section>
+            <div class="main-menu">
+                <div>
+                    <button class="registration-btn main-menu-btns">
+                        Registration
+                    </button>
+                </div>
+                <div class="main-menu-right">
+                    <div>
+                        <p>
+                            0 selected
+                        </p>
+                    </div>
+                    <div>
+                        <select name="Approval status" class="input-select" id="approval-status-select">
+                            <option value="">
+                                Change approval status
+                            </option>
+                            <option value="waiting">waiting for approval</option>
+                            <option value="approved">Approved</option>
+                            <option value="denied">Denial of Approval</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="save-btn main-menu-btns">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="table-wrapper">
+            <table>
+                <tr class="table-head">
+                    <th>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </th>
+                    <th class="th-1">NO</th>
+                    <th class="th-2">Existing type</th>
+                    <th class="th-3">Application type</th>
+                    <th class="th-4">Documents to be submitted</th>
+                    <th class="th-5">Application date</th>
+                    <th class="th-6">Approval</th>
+                    <th class="th-7">Reason for refusal of approval</th>
+                    <th class="th-8">Approval date</th>
+                    <th class="th-9">manager</th>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        4
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        5
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        6
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        7
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        8
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        9
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        11
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        12
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        13
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        14
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        15
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        16
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        17
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        18
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        19
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        20
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        21
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        22
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        23
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        24
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        25
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        26
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        27
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        28
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        29
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        30
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        31
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        32
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        33
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        34
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        35
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        36
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        37
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        38
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        39
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        40
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        41
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        42
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        43
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        44
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        45
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        46
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        47
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr green">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        48
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-granted">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr orange">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                    <td>
+                        49
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-waiting">
+                        <p>
+                            waiting for approval
+                        </p>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr class="tr red">
+                    <td>
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="th-checkbox" />
+                            <span class="checkmark checkmark-grey"></span>
+                        </label>
+                    </td>
+                    <td>
+                        50
+                    </td>
+                    <td>
+                        Income Eligible
+                    </td>
+                    <td>
+                        Personal professional
+                    </td>
+                    <td class="td-4">
+                        <p>
+                            look
+                        </p>
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td class="approval-denied">
+                        <p>
+                            Denial of Approval
+                        </p>
+                    </td>
+                    <td>
+                        Documents cannot be identified. Professional investors cannot be approved for less than one year
+                        since opening an account with a financial investment company.
+                    </td>
+                    <td>
+                        2023-01-10 09:00:00
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="pagination-container">
+            <div class="pagination">
+                <a href="#" class="arrows">❮❮</a>
+                <a href="#" class="arrows">❮</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#" class="arrows">❯</a>
+                <a href="#" class="arrows">❯❯</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
